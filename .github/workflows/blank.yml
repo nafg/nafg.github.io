@@ -32,8 +32,7 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
-          echo "::notice::<<EOF"
-          echo test
-          echo test2
-          echo EOF
+          echo "::notice file=app.js,line=1,col=5,endColumn=7::test"
+          echo ::notice::test1
+          echo ::notice::test2
 
