@@ -34,5 +34,6 @@ jobs:
         run: |
           echo "::notice file=app.js,line=1,col=5,endColumn=7::test"
           echo ::notice::test1
-          echo ::notice::test2
+          echo ::notice::test2\ntest3
+          echo -e '::notice::test4\ntest5'
 
